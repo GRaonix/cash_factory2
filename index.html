@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Cash Factory 2 (Vue3)</title>
-
-    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
 
     <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
   </head>
@@ -12,19 +12,22 @@
     <div id="app">
       
 
-      <div class="clicks">Clicks({{ cart }})</div>
+      <div class="clicks">Cash : {{ cart }} $</div>
       
 
           
-          <div class="player-info">
+          <div class="player-info"><br><b>Player infos</b>
 
             <ul>
               <li v-for="detail in details">{{ detail }}</li>
             </ul>
-            <div v-for="variant in variants" :key="variant.id" @mouseover="updateImage(variant.image)">{{ variant.color }}</div>
-            <button class="button" v-on:click="addToCart">Add to Cart</button>
-            
-            <button class="button" @click="removeFromCart">Remove Item</button>
+            <button class="button" v-on:click="addToCash">Produce $</button>
+            <br><br>
+            <button class="button" @click="buyFactory">Buy Factory 30 $</button>
+            <br>
+            <button class="button" @click="removeFromCart">Buy Mega Factory 300 $</button>
+            <br>
+            <button class="button" @click="removeFromCart">Buy Giga Factory 3000 $</button>
             
           </div>
         </div>
