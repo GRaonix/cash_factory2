@@ -30,7 +30,10 @@
   cursor: pointer;
 }
 
-.button:active,
+.button:active
+{
+  background-image: linear-gradient(144deg,#ff0800, #5B42F3 50%,#d9ff00);
+}
 .button:hover {
     background-image: linear-gradient(144deg,#40ffcf, #5B42F3 50%,#eb00df);
   outline: 0;
@@ -53,17 +56,19 @@
   height: 30px;
   background-color: rgb(251, 255, 0);
   background-image: linear-gradient(
-  45deg,
+  90deg,
   hsl(108deg 100% 61%) 0%,
-  hsl(97deg 98% 58%) 11%,
-  hsl(88deg 97% 54%) 22%,
-  hsl(81deg 96% 50%) 33%,
-  hsl(76deg 100% 48%) 44%,
-  hsl(71deg 100% 48%) 56%,
-  hsl(67deg 100% 48%) 67%,
-  hsl(63deg 100% 47%) 78%,
-  hsl(59deg 100% 48%) 89%,
-  hsl(55deg 100% 50%) 100%
+  hsl(90deg 97% 55%) 10%,
+  hsl(77deg 100% 49%) 20%,
+  hsl(69deg 100% 48%) 30%,
+  hsl(62deg 100% 47%) 40%,
+  hsl(55deg 100% 50%) 50%,
+  hsl(47deg 100% 50%) 60%,
+  hsl(39deg 100% 50%) 70%,
+  hsl(30deg 100% 50%) 80%,
+  hsl(20deg 100% 50%) 90%,
+  hsl(0deg 100% 50%) 100%
+
 
 );
 }
