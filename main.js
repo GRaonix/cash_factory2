@@ -20,7 +20,7 @@ function move() {
 
 var iter = 0;
 function counter() {
-    console.log('show at ' + (iter++));
+    console.log('Cash ' + (iter++));
     setTimeout(counter, 1000);
 }
 
@@ -62,5 +62,12 @@ const app = Vue.createApp({
           this.cashpersec +=130;
         }  
     },
+    setCash() {
+      setTimeout(() => {
+        this.cash = this.cash + this.cashpersec;
+        console.log(this.cash);
+      }, 1000);
+    },
+  
     }
 })

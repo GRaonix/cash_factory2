@@ -18,6 +18,7 @@
     <div id="myBar3"><b>Giga Factories</b></div>
     </div><br><br>
     <button onclick="move()">Click Me</button> <br><br>
+    <button onclick="setCash()">Click Me</button> <br><br>
 
 
     <div id="app">
@@ -25,8 +26,8 @@
 
       <div class="clicks">Cash : {{ cash }} $</div>
       <div class="clicks">Cash per sec : {{ cashpersec }} $</div>
-      
-
+      <button @click="setCash();">Add 1</button>
+   
           
           <div class="player-info"><br><b>Player infos</b>
 
