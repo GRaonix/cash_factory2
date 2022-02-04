@@ -1,10 +1,11 @@
 var i = 0;
+var dps = 1;
 function move() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("myBar");
     var width = 1;
-    var id = setInterval(frame, 10);
+    var id = setInterval(frame, dps);
     function frame() {
       if (width >= 100) {
         clearInterval(id);
@@ -21,7 +22,7 @@ const app = Vue.createApp({
     
     data() {
         return {
-            cash: 0,
+            cash: 0, cashpersec : 0,
             details: ['Cash/click : ','Cash/sec : ', 'Factories owned : ', 'Mega Factories owned : ', 'Giga Factories owned : '],
             
         }
@@ -32,9 +33,12 @@ const app = Vue.createApp({
         },
  
         buyFactory() {
-            if (this.cash >= 1) {
-                this.cash -= 1
+            
+            if (this.cash >= 30) {
+              this.cash -= 30;
+              this.cashpersec +=1;
             }
+            
         },
         
         
