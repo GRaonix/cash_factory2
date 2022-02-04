@@ -18,6 +18,14 @@ function move() {
   }
 }
 
+var iter = 0;
+function counter() {
+    console.log('show at ' + (iter++));
+    setTimeout(counter, 1000);
+}
+
+counter();
+
 const app = Vue.createApp({
     
     data() {
