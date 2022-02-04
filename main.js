@@ -23,13 +23,14 @@ const app = Vue.createApp({
     data() {
         return {
             cash: 0, cashpersec : 0,
-            details: ['Cash/click : ','Cash/sec : ', 'Factories owned : ', 'Mega Factories owned : ', 'Giga Factories owned : '],
+            
             
         }
     },
     methods: {
+
         addToCash() {
-            this.cash += 1
+            this.cash += 1000
         },
  
         buyFactory() {
@@ -37,10 +38,21 @@ const app = Vue.createApp({
             if (this.cash >= 30) {
               this.cash -= 30;
               this.cashpersec +=1;
-            }
-            
+            }  
         },
-        
-        
+        buyMegaFactory() {
+            
+          if (this.cash >= 300) {
+            this.cash -= 300;
+            this.cashpersec +=12;
+          }  
+      },
+      buyGigaFactory() {
+            
+        if (this.cash >= 3000) {
+          this.cash -= 3000;
+          this.cashpersec +=130;
+        }  
+    },
     }
 })

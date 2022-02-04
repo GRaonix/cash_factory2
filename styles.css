@@ -72,3 +72,49 @@
 
 );
 }
+#myBar2 {
+  width: 1%;
+  height: 30px;
+  background-color: rgb(251, 255, 0);
+  background-image: linear-gradient(
+  270deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(57deg 100% 93%) 6%,
+  hsl(57deg 100% 87%) 11%,
+  hsl(57deg 100% 80%) 17%,
+  hsl(57deg 100% 73%) 22%,
+  hsl(57deg 100% 67%) 28%,
+  hsl(57deg 100% 60%) 33%,
+  hsl(83deg 85% 56%) 39%,
+  hsl(108deg 73% 51%) 44%,
+  hsl(134deg 70% 47%) 50%,
+  hsl(159deg 72% 43%) 56%,
+  hsl(185deg 73% 39%) 61%,
+  hsl(210deg 74% 35%) 67%,
+  hsl(216deg 61% 33%) 72%,
+  hsl(223deg 50% 29%) 78%,
+  hsl(229deg 40% 25%) 83%,
+  hsl(235deg 32% 21%) 89%,
+  hsl(241deg 24% 15%) 94%,
+  hsl(248deg 17% 9%) 100%
+
+
+
+);
+}
+#myBar3 {
+  width: 1%;
+  height: 30px;
+  background-color: rgb(251, 255, 0);
+  background-image: linear-gradient(
+    129deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(57deg 100% 70%) 25%,
+    hsl(134deg 70% 47%) 50%,
+    hsl(219deg 55% 31%) 75%,
+    hsl(248deg 17% 9%) 100%
+  
+
+
+);
+}
