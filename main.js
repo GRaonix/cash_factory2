@@ -17,28 +17,23 @@ function move() {
   }
 }
 
-
 const app = Vue.createApp({
-
-
-
-
     
     data() {
         return {
-            cart: 0,
+            cash: 0,
             details: ['Cash/click : ','Cash/sec : ', 'Factories owned : ', 'Mega Factories owned : ', 'Giga Factories owned : '],
             
         }
     },
     methods: {
         addToCash() {
-            this.cart += 1
+            this.cash += 1
         },
  
         buyFactory() {
-            if (this.cart >= 1) {
-                this.cart -= 1
+            if (this.cash >= 1) {
+                this.cash -= 1
             }
         },
         
