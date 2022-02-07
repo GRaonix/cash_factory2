@@ -11,7 +11,7 @@
   <body>
 
     <div id="myProgress" v-bind:style="{ width: width + '%' }">
-      <div id="myBar" v-bind:style="{ size: width + 'px' }"><b>Factories</b></div>
+      <div id="myBar" v-bind:style="{ size: width + '%' }"><b>Factories</b></div>
     </div><br>
     <div id="myProgress">
     <div id="myBar2"><b>Mega Factories</b></div>
@@ -23,12 +23,7 @@
     <button onclick="move()">Click Me</button> <br><br>
     <button onclick="setCash()">Click Me</button> <br><br>
     <br>
-    <button v-on:click="fontSize++">
-      Increase font size
-    </button>
-    <button v-on:click="fontSize--">
-      Decrease font size
-    </button>
+    
     <div id="app">
       <div :style="{ color, width: `${width}px` }">
         hello

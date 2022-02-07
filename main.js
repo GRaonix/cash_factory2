@@ -1,6 +1,6 @@
 var i = 0;
 var dps = 1;
-function move() {
+/*function move() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("myBar");
@@ -17,6 +17,7 @@ function move() {
     }
   }
 }
+*/
 
 var iter = 0;
 function counter() {
@@ -30,7 +31,7 @@ const app = Vue.createApp({
     
     data() {
         return {
-            cash: 0, cashpersec : 0, width : 30,
+            cash: 0, cashpersec : 0, width : 300,
             styleObject: {
               color: 'red',
               fontSize: '13px'
