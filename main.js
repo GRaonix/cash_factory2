@@ -30,7 +30,11 @@ const app = Vue.createApp({
     
     data() {
         return {
-            cash: 0, cashpersec : 0, width : 20
+            cash: 0, cashpersec : 0, width : 30,
+            styleObject: {
+              color: 'red',
+              fontSize: '13px'
+            }
             
         }
     },

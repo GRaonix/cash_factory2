@@ -10,8 +10,8 @@
   </head>
   <body>
 
-    <div id="myProgress">
-      <div id="myBar" :style="{ width: `${width}%` }"><b>Factories</b></div>
+    <div id="myProgress" v-bind:style="{ width: width + '%' }">
+      <div id="myBar" v-bind:style="{ size: width + 'px' }"><b>Factories</b></div>
     </div><br>
     <div id="myProgress">
     <div id="myBar2"><b>Mega Factories</b></div>
@@ -30,10 +30,10 @@
       Decrease font size
     </button>
     <div id="app">
-      <div :style="{ color, fontSize: `${width}px` }">
+      <div :style="{ color, width: `${width}px` }">
         hello
       </div>
-    <p v-bind:style="{ fontSize: fontSize + 'px' }">
+    <p v-bind:style="{ width: width + '%' }">
       Font size is: {{ width }}
     </p>
 
