@@ -30,8 +30,7 @@ const app = Vue.createApp({
     
     data() {
         return {
-            cash: 0, cashpersec : 0,
-            
+            cash: 0, cashpersec : 0, width : 20
             
         }
     },
