@@ -21,27 +21,16 @@
     <div id="myBar3"><b>Giga Factories</b></div>
     </div><br><br>
     <button onclick="move()">Click Me</button> <br><br>
-    <button onclick="setCash()">Click Me</button> <br><br>
-    <br>
     
     <div id="app">
-      <div :style="{ color, width: `${width}px` }">
-        hello
-      </div>
-    <p v-bind:style="{ width: width + '%' }">
-      Font size is: {{ width }}
-    </p>
-
-
-    <div id="app">
       
-
+      <div class="player-info"><br><b>Player infos</b></div>
       <div class="clicks">Cash : {{ cash }} $</div>
       <div class="clicks">Cash per sec : {{ cashpersec }} $</div>
       
    
           
-          <div class="player-info"><br><b>Player infos</b>
+          
 
             <ul>
               <li v-for="detail in details">{{ detail }}</li>
