@@ -1,6 +1,13 @@
-var i = 0;
-var dps = 1;
-/*function move() {
+let i = 0;
+let dps = 1 * 1000; //1s in ms
+
+var iter = 0;
+function counter() {
+  console.log("Cash " + iter++);
+  setTimeout(counter, 1000);
+}
+
+function move() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("myBar");
@@ -17,54 +24,43 @@ var dps = 1;
     }
   }
 }
-*/
-
-var iter = 0;
-function counter() {
-    console.log('Cash ' + (iter++));
-    setTimeout(counter, 1000);
-}
 
 counter();
 
 const app = Vue.createApp({
-    
-    data() {
-        return {
-            cash: 0, cashpersec : 0, width : 300,
-            styleObject: {
-              color: 'red',
-              fontSize: '13px'
-            }
-            
-        }
-    },
-    methods: {
-
-        addToCash() {
-            this.cash += 1000
-        },
- 
-        buyFactory() {
-            
-            if (this.cash >= 30) {
-              this.cash -= 30;
-              this.cashpersec +=1;
-            }  
-        },
-        buyMegaFactory() {
-            
-          if (this.cash >= 300) {
-            this.cash -= 300;
-            this.cashpersec +=12;
-          }  
+  data() {
+    return {
+      cash: 0,
+      cashpersec: 0,
+      width: 300,
+      styleObject: {
+        color: "red",
+        fontSize: "13px",
       },
-      buyGigaFactory() {
-            
-        if (this.cash >= 3000) {
-          this.cash -= 3000;
-          this.cashpersec +=130;
-        }  
+    };
+  },
+  methods: {
+    addToCash() {
+      this.cash += 1000;
+    },
+
+    buyFactory() {
+      if (this.cash >= 30) {
+        this.cash -= 30;
+        this.cashpersec += 1;
+      }
+    },
+    buyMegaFactory() {
+      if (this.cash >= 300) {
+        this.cash -= 300;
+        this.cashpersec += 12;
+      }
+    },
+    buyGigaFactory() {
+      if (this.cash >= 3000) {
+        this.cash -= 3000;
+        this.cashpersec += 130;
+      }
     },
     setCash() {
       setTimeout(() => {
@@ -72,6 +68,5 @@ const app = Vue.createApp({
         console.log(this.cash);
       }, 1000);
     },
-  
-    }
-})
+  },
+});
