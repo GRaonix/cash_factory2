@@ -1,5 +1,5 @@
 let i = 0;
-let dps = 1 * 1000; //1s in ms
+let dps = 1 * 10; //1s in ms
 
 var iter = 0;
 function counter() {
@@ -68,5 +68,6 @@ const app = Vue.createApp({
         console.log(this.cash);
       }, 1000);
     },
+    
   },
 });
