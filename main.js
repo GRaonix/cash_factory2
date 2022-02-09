@@ -25,7 +25,6 @@ function move() {
     }
   }
 }
-
 counter();
 
 const app = Vue.createApp({
@@ -69,6 +68,5 @@ const app = Vue.createApp({
         console.log(this.cash);
       }, 1000);
     },
-    
   },
 });
