@@ -19,6 +19,7 @@ function move() {
         i = 0;
       } else {
         width++;
+        console.log(cash);
         elem.style.width = width + "%";
       }
     }

@@ -96,9 +96,6 @@ transition: width 1s linear 0s;
   hsl(235deg 32% 21%) 89%,
   hsl(241deg 24% 15%) 94%,
   hsl(248deg 17% 9%) 100%
-
-
-
 );
 }
 #myBar3 {
@@ -112,8 +109,5 @@ transition: width 1s linear 0s;
     hsl(134deg 70% 47%) 50%,
     hsl(219deg 55% 31%) 75%,
     hsl(248deg 17% 9%) 100%
-  
-
-
 );
 }
